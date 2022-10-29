@@ -1,0 +1,23 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container-2xl{
+    grid-template-rows: 33% 73%;
+}
+@media (min-width: 1440px) {
+     .container-2xl{
+        grid-template-columns:35% 65%;
+     }
+}
+@media (min-width: 1440px) {
+     .bg-color img{
+        background-image: url('./images/bg-main-desktop.png');
+     }
+}
+.card-front{
+    margin-top: -5rem;
+}
+label{
+    letter-spacing: 2px;
+    color: hsl(278, 68%, 11%);
+}

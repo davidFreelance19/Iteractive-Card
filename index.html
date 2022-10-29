@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="./styles/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 13px; text-align: center; }
+    .attribution a { color: hsl(278, 94%, 30%); font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div class="h-2/5 absolute w-5/6 md:w-2/5 md:h-5/6 justify-center flex flex-col md:gap-8 ml-8 md:ml-24 mt-4 md:mt-16 md:flex-col-reverse">
+    <div class="card-back w-72 h-44 md:w-3/4	md:h-60 bg-no-repeat rounded-lg bg-cover 
+              bg-center relative bg-[url('./images/bg-card-back.png')] self-end md:self-end">
+    </div>
+    <div class="card-front md:mt-0 w-72 px-4 py-4 h-44 md:w-3/4	md:h-60 bg-no-repeat rounded-lg bg-cover 
+              bg-center relative bg-[url('./images/bg-card-front.png')] self-start md:self-center">
+        <img src="images/card-logo.svg" alt="">
+    </div>
+  </div>  
+  <div class="container-2xl h-screen grid md:grid-rows-1">
+    <div class="bg-color h-3/6 bg-no-repeat h-full">
+      <img src="images/bg-main-mobile.png" alt="bg-color" class="w-full h-full">
+    </div>
+    <form action="#" class="form mt-24 md:mt-0 w-10/12 md:w-2/5 md:flex md:flex-col md:justify-center my-0 mx-auto">
+      <section class="name">
+        <label class="uppercase text-xs" for="name" class="block">Cardholder name</label>
+        <input type="text" placeholder="e.g Jane Appleseed" id="name" class="w-full py-2 rounded-lg mt-2 mb-3 border-solid	border border-slate-300 px-3">
+      </section>
+      <section class="card-number">
+        <label class="uppercase text-xs" for="card-number" class="block">Card number</label>
+        <input type="card" id="card-number" placeholder="e.g. 1234 5678 9123 0000" class="w-full py-2 rounded-lg mt-2 mb-3 border-solid	border border-slate-300 px-3">
+      </section>
+      <section class="card-info flex">
+        <div>
+          <label class="uppercase text-xs" for="card-number" class="">Exp. Date</label>
+          <input type="card" id="card-number" placeholder="MM" class="py-2 rounded-lg mt-2 mb-3 border-solid	border border-slate-300 px-3 w-20">
+        </div>
+        <div>
+          <label class="uppercase text-xs" for="card-number" class="">(Mm/yy)</label>
+          <input type="card" id="card-number" placeholder="YY" class="py-2 rounded-lg mt-2 mb-3 border-solid	border border-slate-300 px-3 w-16">
+        </div>
+        <div>
+          <label class="uppercase text-xs" for="card-number" class="">cvc</label>
+          <input type="card" id="card-number" placeholder="e.g. 123" class="py-2 rounded-lg mt-2 mb-3 border-solid	border border-slate-300 px-3 w-40">
+        </div>
+      </section>
+      <button type="submit" class="text-uppercase w-full mt-4 py-3 rounded-lg text-white bg-[#4c1d95]">Confirm</button>
+    </form>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/dev_rodbd/">David Rodriguez Badillo</a>.
+  </div>
+</body>
+</html>
