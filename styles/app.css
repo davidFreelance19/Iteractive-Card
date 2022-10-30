@@ -1,5 +1,7 @@
 body{
     font-family: 'Space Grotesk', sans-serif;
+    
+    letter-spacing: 2px;
 }
 .container-2xl{
     grid-template-rows: 33% 73%;
@@ -15,9 +17,24 @@ body{
      }
 }
 .card-front{
+    grid-template-rows: 60% 40%;
     margin-top: -5rem;
 }
 label{
     letter-spacing: 2px;
     color: hsl(278, 68%, 11%);
+}
+.cvc{ 
+    height: 96%;
+}
+.exito{
+    top: -18rem;
+}
+@media (min-width: 1440px) {
+     .form{
+        top: 16rem;
+     }
+     .exito{
+        top: -2rem;
+     }
 }
